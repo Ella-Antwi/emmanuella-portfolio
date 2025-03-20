@@ -1,0 +1,174 @@
+﻿ <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skins/color-1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!--=== Style Switcher ===
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled /> -->
+    <link rel="stylesheet" href="css/style-switcher.css" />
+</head>
+<body>
+
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <div class="aside">
+            <div class="logo">
+                <a href="/index.html"><span class="big-e">E</span>volutions <span class="small-eye">Eye</span></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="/index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="/about.html"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="/services.html"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="/porfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="/contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+
+        </div>
+        <!-- Aside End -->
+        <!--=== Main Content Start ===-->
+        <div class="main-content">
+            <!--=== Home Section Start ===-->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info pad-15">
+                            <h1 class="hello">Hello, my name is <span class="name"> Emmanuella Antwi</span></h1>
+                            <h2 class="my-profession">I am a <span class="typing"> Web Developer</span></h2>
+                            <p>I'm a web designer with extensive experience for over four (4) years. My expertise is to create and design websites, graphic design, and many more...</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                        </div>
+                        <div class="home-img pad-15">
+                            <img src="images/me.jpg" alt="personal pic" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=== Animated Stats Section ===-->
+<section class="stats section" id="stats">
+    <div class="container">
+        <div class="section-title pad-15">
+            <h2>My Achievements</h2>
+        </div>
+        <div class="row">
+            <div class="stat-item pad-15">
+                <i class="fa fa-check-circle"></i>
+                <h2 class="counter" data-count="50">0</h2>
+                <p>Completed Projects</p>
+            </div>
+            <div class="stat-item pad-15">
+                <i class="fa fa-smile"></i>
+                <h2 class="counter" data-count="40">0</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item pad-15">
+                <i class="fa fa-code"></i>
+                <h2 class="counter" data-count="5">0</h2>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!--=== Testimonials Section ===-->
+<section class="testimonials section" id="testimonials">
+    <div class="container">
+        <div class="section-title pad-15">
+            <h2>What People Say</h2>
+        </div>
+        <div class="testimonial-item pad-15">
+            <p>"Emmanuella is an incredibly talented developer. Her skills in UI/UX and web design are top-notch!"</p>
+            <h4>- John Doe, CEO at TechCorp</h4>
+        </div>
+        <div class="testimonial-item pad-15">
+            <p>"Working with Emmanuella has been an amazing experience. She delivers outstanding results every time."</p>
+            <h4>- Jane Smith, Freelancer</h4>
+        </div>
+    </div>
+</section>
+
+            <!--=== Home Section End ===-->
+            
+            <!--=== Main Content End ===-->
+        </div>
+
+    </div>
+    <!--=== Main Container End ===-->
+    <!--=== Style Switcher Start ===-->
+    <div class="style-switcher">
+
+        <div class="day-night s-icon">
+            <i class="fas "></i><!--fa-moon-->
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Evolutions Eye. All Rights Reserved.</p>
+</footer>
+
+
+    <!--=== Style Switcher End ===-->
+    <!--======================================== JS Files ========================================-->
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=== Hamburger Menu ===-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navToggler = document.querySelector(".nav-toggler");
+            const aside = document.querySelector(".aside");
+
+            navToggler.addEventListener("click", function () {
+                aside.classList.toggle("open");
+                navToggler.classList.toggle("active");
+            });
+        });
+        </script>
+
+        
+            <!--=== Counter Animation ===-->
+            <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let counters = document.querySelectorAll(".counter");
+    let speed = 200;
+
+    counters.forEach(counter => {
+        let updateCount = () => {
+            let target = +counter.getAttribute("data-count");
+            let count = +counter.innerText;
+            let increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 10);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+});
+        </script>
+
+</body>
+</html>
